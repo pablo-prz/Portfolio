@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "inconsolata";
+  src: url("../../fonts/Inconsolata-VariableFont_wdth\,wght.ttf")
+    format("truetype");
+}
+.bar {
+  position: fixed; /* Fija la barra de navegación */
+  top: 0; /* La coloca en la parte superior de la página */
+  display: flex;
+  justify-content: space-around;
+  background-color: #eef0fe7e;
+  padding: 10px;
+  width: 100%;
+  z-index: 999; /* Asegura que la barra esté en la parte superior del contenido */
+}
+.buttons {
+  font-family: "inconsolata";
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  font-size: large;
+  background-color: #fafaff;
+  margin-right: 3%;
+  color: #494949;
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.4),
+    4px -4px 4px rgba(255, 255, 255, 0.4);
+  transition: box-shadow 0.3s ease; /* Agregamos una transición suave a la propiedad box-shadow */
+}
+
+.buttons:hover {
+  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.2),
+    2px -2px 2px rgba(255, 255, 255, 0.2);
+  transition: box-shadow 0.3s ease; /* Mantenemos la misma duración de la transición en hover */
+}

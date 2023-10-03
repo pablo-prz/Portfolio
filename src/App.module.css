@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "inconsolata";
+  src: url("./fonts/Inconsolata-VariableFont_wdth\,wght.ttf") format("truetype");
+}
+
+.Landing {
+  font-family: "inconsolata";
+  color: #1c1c1c;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  border-top: 1px solid transparent;
+}
+.welcometxt {
+  position: absolute;
+  left: 2%;
+  top: 30%;
+  font-size: large;
+}
+.loremcontainer {
+  position: absolute;
+  right: 2%;
+  top: 30%;
+  width: 30%;
+}
+
+.mifoto {
+  border-bottom-left-radius: 290px;
+  border-bottom-right-radius: 290px;
+  width: 30%;
+  position: absolute;
+  top: 19%;
+  left: 34.2%;
+}
+.scrolltxt {
+  font-size: 40px;
+  width: 10%;
+  color: #1c1c1c;
+  position: absolute;
+  top: 85%;
+  left: 45%;
+}
+
+.About {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  border-top: 1px solid transparent;
+}
+.aboutcontainer {
+  font-family: "inconsolata";
+  height: 80%;
+  width: 90%;
+  color: #1c1c1c;
+  border-radius: 50px;
+  padding: 2%;
+  font-size: larger;
+  position: absolute;
+  left: 3%;
+  top: 110%;
+  backdrop-filter: blur(5px); /* Aplicar un desenfoque al fondo */
+  background-color: #4949494b;
+}
+.apsimgscontainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.apsimgs {
+  padding: 2%;
+  max-width: 275px;
+}
+.h3imgs {
+  display: flex;
+  justify-content: space-around;
+  color: #1c1c1c;
+}
+.Technologies {
+  font-family: "inconsolata";
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 5%;
+  border-top: 1px solid transparent;
+}
+.Technologiescontainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.Technologiesimgs {
+  max-width: 200px;
+}
+.Technologies2container {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.Technologiesimgs2 {
+  max-width: 100px;
+}
+.Proyects {
+  font-family: "inconsolata";
+  text-align: center;
+  margin-top: 10%;
+  height: 100vh;
+  width: 100vw;
+  border-top: 1px solid transparent;
+}
+.slidecontainer {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.imgContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.imgContainer img {
+  max-width: 500px;
+  max-height: 475px;
+}
+.textContainer {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column; /* Apila elementos verticalmente */
+  align-items: flex-start; /* Alinea elementos a la izquierda */
+  margin-left: 10px; /* Agrega un margen a la izquierda para separar del borde de la imagen */
+}
+.Contacts {
+  font-family: "inconsolata";
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  border-top: 1px solid transparent;
+  position: relative; /* Añadimos posición relativa para el elemento principal */
+}
+
+.Contacts::after {
+  content: ""; /* Agregamos contenido al pseudo-elemento */
+  position: absolute;
+  bottom: 10%; /* Margen inferior del 10% */
+  left: 0; /* Desde el borde izquierdo */
+  right: 0; /* Hasta el borde derecho */
+  height: 3px; /* Altura de la línea */
+  background-color: rgba(255, 0, 0, 0); /* Color de la línea */
+  box-shadow: 0px 3px 3px rgba(255, 255, 255, 0.4),
+    0px -3px 3px rgba(0, 0, 0, 0.4);
+  border: none;
+}
+.Contacts h3 {
+  margin-top: 5%;
+  color: rgb(75, 153, 127);
+}
+.redescont {
+  margin-top: 15%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.redesitem {
+  display: flex;
+  align-items: center;
+}
+
+.redesitem img {
+  margin-right: 5%;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.numMail {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.numMailItem {
+  display: flex;
+  align-items: center;
+}
+
+.numMailItem img {
+  margin-right: 5%;
+  max-width: 50px;
+  max-height: 50px;
+}
+.buttonUp {
+  position: absolute;
+  right: 0;
+  margin-top: 10%;
+  margin-right: 5%;
+  max-width: 50px;
+  max-height: 50px;
+  text-align: center;
+  background-color: #fafaff;
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.4),
+    4px -4px 4px rgba(255, 255, 255, 0.4);
+  transition: box-shadow 0.3s ease;
+  color: #000000;
+}
+.buttonUp:hover {
+  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.2),
+    2px -2px 2px rgba(255, 255, 255, 0.2);
+  transition: box-shadow 0.3s ease;
+}
