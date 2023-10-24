@@ -8,7 +8,7 @@
   top: 0; /* La coloca en la parte superior de la página */
   display: flex;
   justify-content: space-around;
-  background-color: #eef0fe7e;
+  background-color: #d8dee270;
   padding: 10px;
   width: 100%;
   z-index: 999; /* Asegura que la barra esté en la parte superior del contenido */
@@ -21,16 +21,18 @@
   padding-bottom: 10px;
   border-radius: 20px;
   font-size: large;
-  background-color: #fafaff;
+  background-color: #e4eaee;
   margin-right: 3%;
   color: #494949;
-  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.4),
-    4px -4px 4px rgba(255, 255, 255, 0.4);
-  transition: box-shadow 0.3s ease; /* Agregamos una transición suave a la propiedad box-shadow */
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4), 4px -4px 4px #ecf2f7a2;
+  transition: box-shadow 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s;
 }
-
+.buttons:active {
+  background-color: #f2faff; /* Nuevo color de fondo cuando se hace clic */
+}
 .buttons:hover {
-  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.2),
-    2px -2px 2px rgba(255, 255, 255, 0.2);
-  transition: box-shadow 0.3s ease; /* Mantenemos la misma duración de la transición en hover */
+  box-shadow: 3px 3px 3px #d6852d, 3px 3px 3px #f6fbffa2;
+  color: #d6852d; /* Cambiamos el color del texto a rojo en hover */
+  transition: box-shadow 0.3s ease, color 0.3s ease; /* Mantenemos la misma duración de la transición en hover */
 }

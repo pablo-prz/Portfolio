@@ -23,6 +23,9 @@ import instaLogo from "./imgs/instagram-logo.png";
 import linkedinLogo from "./imgs/linkedin-logo.png";
 import whatsappLogo from "./imgs/whatsapp-logo.png";
 import gmailLogo from "./imgs/gmail-logo.png";
+import cvlogo from "./imgs/cv.png";
+import githublogo from "./imgs/github.png";
+import pcuni from "./imgs/pc-universe.png";
 
 function App() {
   return (
@@ -31,16 +34,16 @@ function App() {
         <Nav />
         <section className={style.Landing} id="Landing">
           <div className={style.welcometxt}>
-            <h1 className={style.h1_1}>Pablo perez</h1>
-            <h2>joven desarrollador web junior</h2>
+            <h1>Pablo Perez</h1>
+            <h2>Desarrollador web junior</h2>
           </div>
           <img className={style.mifoto} src={mifoto} />
           <div className={style.loremcontainer}>
-            <h1 className={style.h1_1}>Introduccion</h1>
+            <h1>Introducción</h1>
             <h2>
-              programador full stack junior, constantemente invenstigando y
-              aprendiendo diferentes herramientas, frameworks y lenguajes para
-              crecer en este rubro.
+              Apasionado por el desarrollo web, mi compromiso es crecer
+              constantemente y abrazar nuevos desafíos. Siempre buscando
+              aprender y evolucionar en este emocionante campo.
             </h2>
           </div>
 
@@ -49,12 +52,12 @@ function App() {
         <section className={style.About} id="About">
           <div className={style.aboutcontainer}>
             <h3>
-              graduado como tecnico electromecaniuco en la E.E.S.T N°2. tambien
+              Graduado como tecnico electromecaniuco en la E.E.S.T N°2. Tambien
               eh completado un intenso bootcamp de programacion con el cual he
               aprendido a desarrollar aplicaciones web utilizando varias de las
               las tecnologias mas modernas y demandadas en la industria.
             </h3>
-            <h1>En que puedo ayudarte?</h1>
+            <h1>¿En que puedo ayudarte?</h1>
             <div className={style.apsimgscontainer}>
               <img className={style.apsimgs} src={csspik} />
               <img className={style.apsimgs} src={frontendpik} />
@@ -62,7 +65,7 @@ function App() {
               <img className={style.apsimgs} src={DBpik} />
             </div>
             <div className={style.h3imgs}>
-              <h3>Diseñar</h3>
+              <h3>Diseño</h3>
               <h3>Front-End</h3>
               <h3>Back-End</h3>
               <h3>Bases de Datos</h3>
@@ -72,18 +75,18 @@ function App() {
         <section className={style.Technologies} id="Technologies">
           <h1>Tecnologias</h1>
           <div className={style.Technologiescontainer}>
-            <img className={style.Technologiesimgs} src={reactLogo} />
-            <img className={style.Technologiesimgs} src={nodeLogo} />
-            <img className={style.Technologiesimgs} src={psgLogo} />
-            <img className={style.Technologiesimgs} src={jsLogo} />
-            <img className={style.Technologiesimgs} src={gitLogo} />
+            <img src={reactLogo} />
+            <img src={nodeLogo} />
+            <img src={psgLogo} />
+            <img src={jsLogo} />
+            <img src={gitLogo} />
           </div>
           <div className={style.Technologies2container}>
-            <img className={style.Technologiesimgs2} src={reduxLogo} />
-            <img className={style.Technologiesimgs2} src={expressLogo} />
-            <img className={style.Technologiesimgs2} src={seqLogo} />
-            <img className={style.Technologiesimgs2} src={htmlCssLogo} />
-            <img className={style.Technologiesimgs2} src={dockerLogo} />
+            <img src={reduxLogo} />
+            <img src={expressLogo} />
+            <img src={seqLogo} />
+            <img src={htmlCssLogo} />
+            <img src={dockerLogo} />
           </div>
         </section>
         <section className={style.Proyects} id="Proyects">
@@ -91,69 +94,117 @@ function App() {
           <Carousel showArrows={true} infiniteLoop={true} autoPlay={true}>
             <div className={style.slidecontainer}>
               <div className={style.imgContainer}>
-                <img src="https://wallpapercave.com/wp/V2Z7Bes.jpg" />
-                <a href="https://wallpapercave.com/wp/V2Z7Bes.jpg">
-                  Descripción breve del Proyecto 2
+                <a href="https://pc-universe.vercel.app/">
+                  <h2>PC-Universe</h2>
                 </a>
+                <img src={pcuni} />
+                <div className={style.repos}>
+                  <a href="https://github.com/Auri08V/PC-Universe-Back.git">
+                    <p> Repo Back</p>
+                  </a>
+                  <a href="https://github.com/jorgePz-tj1904/PCUniverse.git">
+                    <p> Repo Front</p>
+                  </a>
+                </div>
               </div>
               <div className={style.textContainer}>
                 <h3>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                  ipsam, eligendi voluptatem modi quis maiores porro excepturi
-                  facere consectetur? Perferendis sed consequuntur obcaecati
-                  quaerat excepturi! Sapiente aut quam iure esse.
+                  Proyecto académico desarrollado por un equipo de 6
+                  integrantes, que se centra en la creación de un E-Commerce de
+                  hardware con un diseño limpio y atractivo. Este proyecto está
+                  diseñado para ser accesible para aquellos que no tienen
+                  experiencia en el ensamblaje de computadoras. Incluye
+                  autenticación de terceros, una pasarela de pagos y un panel de
+                  administrador. Mi principal enfoque se centró en el desarrollo
+                  del back-end y la gestión de la base de datos.
                 </h3>
               </div>
             </div>
             <div className={style.slidecontainer}>
               <div className={style.imgContainer}>
-                <img src="https://wallpapercave.com/wp/wp1882781.jpg" />
                 <a href="https://wallpapercave.com/wp/wp1882781.jpg">
-                  Descripción breve del Proyecto 2
+                  <h2>Countries</h2>
+                </a>
+                <img src="https://wallpapercave.com/wp/wp1882781.jpg" />
+                <a href="https://github.com/pablo-prz/proyecto_individual_countries.git">
+                  <p>Repositorio</p>
                 </a>
               </div>
               <div className={style.textContainer}>
                 <h3>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                  ipsam, eligendi voluptatem modi quis maiores porro excepturi
-                  facere consectetur? Perferendis sed consequuntur obcaecati
-                  quaerat excepturi! Sapiente aut quam iure esse.
+                  Proyecto académico individual con el propósito de desarrollar
+                  una "agenda de viajes". Permite la creación de actividades en
+                  diversos países, mostrando información relevante de 250
+                  destinos diferentes. Mi enfoque abarcó la creación y gestión
+                  de la base de datos, el desarrollo del back-end y del
+                  front-end de manera integral.
                 </h3>
               </div>
             </div>
           </Carousel>
         </section>
         <section className={style.Contacts} id="Contacts">
-          <h3>contact me</h3>
+          <h3>Contact me</h3>
           <h1>Maneras de Contactarme</h1>
           <div className={style.redescont}>
             <div className={style.redesitem}>
-              <img src={linkedinLogo} />
-              <a href="https://www.linkedin.com/in/pablo-perezzz">Linkedin</a>
+              <a href="https://www.linkedin.com/in/pablo-perezzz">
+                <button>
+                  <img src={linkedinLogo} />
+                  <h4>Linkedin</h4>
+                </button>
+              </a>
             </div>
+
             <div className={style.redesitem}>
-              <img src={gitLogo} />
-              <a href="https://github.com/pablo-prz">GitHub</a>
+              <a href="https://github.com/pablo-prz">
+                <button>
+                  <img src={githublogo} />
+                  <h4>GitHub</h4>
+                </button>
+              </a>
             </div>
+
             <div className={style.redesitem}>
-              <img src={instaLogo} />
-              <a href="https://www.instagram.com/pavlo_prz/">Instagram</a>
+              <a href="https://www.instagram.com/pavlo_prz/">
+                <button>
+                  <img src={instaLogo} />
+                  <h4>Instagram</h4>
+                </button>
+              </a>
             </div>
           </div>
 
           <div className={style.numMail}>
-            <div className={style.numMailItem}>
-              <img src={whatsappLogo} />
-              <a href="https://wa.me/541166411133">Whatsapp</a>
+            <div>
+              <a href="https://wa.me/541166411133">
+                <button>
+                  <img src={whatsappLogo} />
+                  <h4>Whatsapp</h4>
+                </button>
+              </a>
             </div>
-            <div className={style.numMailItem}>
-              <img src={gmailLogo} />
+            <div>
+              <a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:9bc85d15-129d-4def-ae4e-16e1c94107ed">
+                <button>
+                  <img src={cvlogo} />
+                  <h4>CV</h4>
+                </button>
+              </a>
+            </div>
+            <div>
               <a href="mailto:perezpablo0903@gmail.com">
-                perezpablo0903@gmail.com
+                <button>
+                  <img src={gmailLogo} />
+                  <h4>Email</h4>
+                </button>
               </a>
             </div>
           </div>
-          <button className={style.buttonUp}>up</button>
+          <footer className={style.footer}>
+            <div className={style.divider}></div>
+            <p>&copy; 2023 Pablo Perez. Todos los derechos reservados.</p>
+          </footer>
         </section>
       </div>
     </>

@@ -4,19 +4,19 @@ const Nav = () => {
   return (
     <div className={style.bar}>
       <a href="#Landing" className={style.buttons}>
-        Home
+        Inicio
       </a>
       <a href="#About" className={style.buttons}>
-        About me
+        Sobre mi
       </a>
       <a href="#Technologies" className={style.buttons}>
-        Skills
+        Tecnologias
       </a>
       <a href="#Proyects" className={style.buttons}>
-        Proyects
+        Proyectos
       </a>
       <a href="#Contacts" className={style.buttons}>
-        Contact
+        Contacto
       </a>
     </div>
   );

@@ -1,21 +1,22 @@
-@font-face {
-  font-family: "inconsolata";
-  src: url("./fonts/Inconsolata-VariableFont_wdth\,wght.ttf") format("truetype");
+.app {
+  overflow-x: hidden;
 }
 
 .Landing {
-  font-family: "inconsolata";
   color: #1c1c1c;
   text-align: center;
   height: 100vh;
-  width: 100vw;
+  width: 99vw;
   border-top: 1px solid transparent;
 }
 .welcometxt {
   position: absolute;
-  left: 2%;
+  left: 5%;
   top: 30%;
   font-size: large;
+}
+.welcometxt h1 {
+  color: #d6852d;
 }
 .loremcontainer {
   position: absolute;
@@ -23,14 +24,17 @@
   top: 30%;
   width: 30%;
 }
-
+.loremcontainer h1 {
+  color: #d6852d;
+}
 .mifoto {
-  border-bottom-left-radius: 290px;
-  border-bottom-right-radius: 290px;
+  border-radius: 350px;
   width: 30%;
+  height: 65%;
   position: absolute;
   top: 19%;
   left: 34.2%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
 }
 .scrolltxt {
   font-size: 40px;
@@ -44,23 +48,25 @@
 .About {
   text-align: center;
   height: 100vh;
-  width: 100vw;
+  width: 99vw;
   background-repeat: no-repeat;
   border-top: 1px solid transparent;
 }
 .aboutcontainer {
-  font-family: "inconsolata";
   height: 80%;
   width: 90%;
-  color: #1c1c1c;
   border-radius: 50px;
   padding: 2%;
   font-size: larger;
   position: absolute;
   left: 3%;
   top: 110%;
-  backdrop-filter: blur(5px); /* Aplicar un desenfoque al fondo */
-  background-color: #4949494b;
+  backdrop-filter: blur(5px);
+  background-color: #d8dee2;
+
+  box-shadow: 10px 10px 10px #ecf2f7a2, -10px -10px 10px #ecf2f7a2,
+    inset 5px 5px 10px rgba(73, 73, 73, 0.5),
+    inset -5px -5px 10px rgba(73, 73, 73, 0.5);
 }
 .apsimgscontainer {
   display: flex;
@@ -76,44 +82,78 @@
   color: #1c1c1c;
 }
 .Technologies {
-  font-family: "inconsolata";
   text-align: center;
   height: 100vh;
-  width: 100vw;
-  margin-top: 5%;
+  width: 99vw;
+  margin-top: 8%;
   border-top: 1px solid transparent;
+}
+.Technologies H1 {
+  margin-top: 5%;
+  color: #d6852d;
 }
 .Technologiescontainer {
   display: flex;
   justify-content: space-evenly;
+  max-width: 100%;
+  margin: 0 auto;
 }
-.Technologiesimgs {
+.Technologiescontainer img {
+  background-color: #d8dee2;
+  padding: 1%;
+  border-radius: 15%;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4), 4px -4px 4px #ecf2f7a2;
   max-width: 200px;
+  transition: box-shadow 0.3s ease; /* Agregamos una transición suave a la propiedad box-shadow */
+}
+
+.Technologiescontainer img:hover {
+  box-shadow: 3px 3px 3px #d6852d, 3px 3px 3px #f6fbffa2;
 }
 .Technologies2container {
   margin-top: 10%;
   display: flex;
   justify-content: space-evenly;
 }
-.Technologiesimgs2 {
+.Technologies2container img {
+  background-color: #d8dee2;
+  padding: 1%;
+  border-radius: 15%;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4), 4px -4px 4px #ecf2f7a2;
+  transition: box-shadow 0.3s ease;
   max-width: 100px;
 }
-.Proyects {
-  font-family: "inconsolata";
-  text-align: center;
-  margin-top: 10%;
-  height: 100vh;
-  width: 100vw;
-  border-top: 1px solid transparent;
+.Technologies2container img:hover {
+  box-shadow: 3px 3px 3px #d6852d, 3px 3px 3px #f6fbffa2;
 }
+.Proyects {
+  text-align: center;
+  margin-top: 15%;
+  height: 100vh;
+  width: 99vw;
+  border-top: 1px solid transparent;
+  overflow: hidden;
+}
+
+.Proyects h1 {
+  margin-top: 5%;
+  color: #d6852d;
+}
+
 .slidecontainer {
+  margin-top: 2%;
   padding-top: 5%;
   padding-bottom: 5%;
-  background-color: bisque;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: space-around;
+  height: 100%;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+
+  box-shadow: -10px -10px 10px #fefeffa2,
+    inset 5px 5px 10px rgba(73, 73, 73, 0.5);
 }
 
 .imgContainer {
@@ -124,21 +164,37 @@
 .imgContainer img {
   max-width: 500px;
   max-height: 475px;
+  border-radius: 5%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
 }
+
+.repos {
+  display: flex;
+  justify-content: center;
+}
+
+.repos a {
+  margin: 2%;
+}
+
 .textContainer {
   max-width: 500px;
   display: flex;
-  flex-direction: column; /* Apila elementos verticalmente */
-  align-items: flex-start; /* Alinea elementos a la izquierda */
-  margin-left: 10px; /* Agrega un margen a la izquierda para separar del borde de la imagen */
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+  overflow: hidden; /* Evita el desbordamiento vertical */
+}
+
+.textContainer h3 {
+  font-size: 22px;
 }
 .Contacts {
-  font-family: "inconsolata";
   text-align: center;
   height: 100vh;
-  width: 100vw;
+  width: 99vw;
   border-top: 1px solid transparent;
-  position: relative; /* Añadimos posición relativa para el elemento principal */
+  position: relative;
 }
 
 .Contacts::after {
@@ -149,13 +205,12 @@
   right: 0; /* Hasta el borde derecho */
   height: 3px; /* Altura de la línea */
   background-color: rgba(255, 0, 0, 0); /* Color de la línea */
-  box-shadow: 0px 3px 3px rgba(255, 255, 255, 0.4),
-    0px -3px 3px rgba(0, 0, 0, 0.4);
   border: none;
+  overflow: hidden;
 }
 .Contacts h3 {
   margin-top: 5%;
-  color: rgb(75, 153, 127);
+  color: #d6852d;
 }
 .redescont {
   margin-top: 15%;
@@ -166,6 +221,19 @@
 .redesitem {
   display: flex;
   align-items: center;
+}
+.redesitem button {
+  width: 110px;
+  height: 130px;
+  background-color: #e4eaee;
+  color: #494949;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4), 4px -4px 4px #ecf2f7a2;
+  transition: box-shadow 0.3s ease, color 0.3s ease;
+}
+.redesitem button:hover {
+  box-shadow: 3px 3px 3px #d6852d, 3px 3px 3px #f6fbffbb;
+  color: #d6852d; /* Cambiamos el color del texto a rojo en hover */
+  transition: box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .redesitem img {
@@ -179,33 +247,38 @@
   display: flex;
   justify-content: space-evenly;
 }
-
-.numMailItem {
-  display: flex;
-  align-items: center;
+.numMail button {
+  width: 110px;
+  height: 130px;
+  background-color: #e4eaee;
+  color: #494949;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4), 4px -4px 4px #ecf2f7a2;
+  transition: box-shadow 0.3s ease, color 0.3s ease;
 }
-
-.numMailItem img {
+.numMail button:hover {
+  box-shadow: 3px 3px 3px #d6852d, 3px 3px 3px #f6fbffbb;
+  color: #d6852d; /* Cambiamos el color del texto a rojo en hover */
+  transition: box-shadow 0.3s ease, color 0.3s ease;
+}
+.numMail img {
   margin-right: 5%;
   max-width: 50px;
   max-height: 50px;
 }
-.buttonUp {
-  position: absolute;
-  right: 0;
-  margin-top: 10%;
-  margin-right: 5%;
-  max-width: 50px;
-  max-height: 50px;
+
+.footer {
   text-align: center;
-  background-color: #fafaff;
-  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.4),
-    4px -4px 4px rgba(255, 255, 255, 0.4);
-  transition: box-shadow 0.3s ease;
-  color: #000000;
+  padding: 10px;
+  background-color: #d8dee2;
+  color: #1c1c1c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-.buttonUp:hover {
-  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.2),
-    2px -2px 2px rgba(255, 255, 255, 0.2);
-  transition: box-shadow 0.3s ease;
+
+.divider {
+  height: 3px;
+  background-color: #d6852d;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4), 4px 4px 4px #ecf2f7a2;
 }
