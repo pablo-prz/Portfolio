@@ -1,0 +1,29 @@
+.aboutcontainer {
+  height: 80%;
+  width: 90%;
+  border-radius: 50px;
+  padding: 2%;
+  font-size: larger;
+  position: absolute;
+  left: 3%;
+  top: 110%;
+  backdrop-filter: blur(5px);
+  background-color: #d8dee2;
+
+  box-shadow: 10px 10px 10px #ecf2f7a2, -10px -10px 10px #ecf2f7a2,
+    inset 5px 5px 10px rgba(73, 73, 73, 0.5),
+    inset -5px -5px 10px rgba(73, 73, 73, 0.5);
+}
+.apsimgscontainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.apsimgs {
+  padding: 2%;
+  max-width: 275px;
+}
+.h3imgs {
+  display: flex;
+  justify-content: space-around;
+  color: #1c1c1c;
+}

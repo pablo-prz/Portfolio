@@ -1,22 +1,26 @@
 import style from "./Nav.module.css";
+import { useLanguage } from "../translator/languageContext";
+import translations from "../translator/translations";
 
 const Nav = () => {
+  const { language } = useLanguage();
+  const translatedTexts = translations[language];
   return (
     <div className={style.bar}>
-      <a href="#Landing" className={style.buttons}>
-        Inicio
+      <a href="#Home" className={style.buttons}>
+        {translatedTexts.navHome}
       </a>
       <a href="#About" className={style.buttons}>
-        Sobre mi
+        {translatedTexts.navAbout}
       </a>
       <a href="#Technologies" className={style.buttons}>
-        Tecnologias
+        {translatedTexts.navTech}
       </a>
       <a href="#Proyects" className={style.buttons}>
-        Proyectos
+        {translatedTexts.navProjects}
       </a>
       <a href="#Contacts" className={style.buttons}>
-        Contacto
+        {translatedTexts.navContact}
       </a>
     </div>
   );

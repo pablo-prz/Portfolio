@@ -1,0 +1,35 @@
+
+.Technologiescontainer {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .Technologiescontainer img {
+    background-color: #d8dee2;
+    padding: 1%;
+    border-radius: 15%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4), 4px -4px 4px #ecf2f7a2;
+    max-width: 200px;
+    transition: box-shadow 0.3s ease; /* Agregamos una transición suave a la propiedad box-shadow */
+  }
+  
+  .Technologiescontainer img:hover {
+    box-shadow: 3px 3px 3px #d6852d, 3px 3px 3px #f6fbffa2;
+  }
+  .Technologies2container {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .Technologies2container img {
+    background-color: #d8dee2;
+    padding: 1%;
+    border-radius: 15%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4), 4px -4px 4px #ecf2f7a2;
+    transition: box-shadow 0.3s ease;
+    max-width: 100px;
+  }
+  .Technologies2container img:hover {
+    box-shadow: 3px 3px 3px #d6852d, 3px 3px 3px #f6fbffa2;
+  }

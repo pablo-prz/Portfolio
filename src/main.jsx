@@ -1,10 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import Nav from "./componentes/navBar/Nav.jsx";
+import "./index.css";
+import { LanguageProvider } from "./componentes/translator/languageContext.jsx";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <LanguageProvider>
+      <App />
+      <Nav />
+    </LanguageProvider>
+  </React.StrictMode>
+);
