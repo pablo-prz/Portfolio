@@ -26,6 +26,11 @@ import gmailLogo from "./imgs/gmail-logo.png";
 import cvlogo from "./imgs/cv.png";
 import githublogo from "./imgs/github.png";
 import pcuni from "./imgs/pc-universe.png";
+import pcuni2 from "./imgs/pc-universe-2.png";
+import pcuni3 from "./imgs/pc-universe-3.png";
+import countries1 from "./imgs/countries-1.png";
+import countries2 from "./imgs/countries-2.png";
+import countries3 from "./imgs/countries-3.png";
 
 function App() {
   return (
@@ -91,13 +96,36 @@ function App() {
         </section>
         <section className={style.Proyects} id="Proyects">
           <h1>Proyectos</h1>
-          <Carousel showArrows={true} infiniteLoop={true} autoPlay={true}>
+          <Carousel
+            showArrows={true}
+            infiniteLoop={true}
+            autoPlay={true}
+            interval={9000}
+          >
             <div className={style.slidecontainer}>
               <div className={style.imgContainer}>
                 <a href="https://pc-universe.vercel.app/">
                   <h2>PC-Universe</h2>
                 </a>
-                <img src={pcuni} />
+
+                <Carousel
+                  className={style.imgslide}
+                  showThumbs={false}
+                  interval={3000}
+                  showArrows={false}
+                  infiniteLoop={true}
+                  autoPlay={true}
+                >
+                  <div>
+                    <img src={pcuni} />
+                  </div>
+                  <div>
+                    <img src={pcuni2} />
+                  </div>
+                  <div>
+                    <img src={pcuni3} />
+                  </div>
+                </Carousel>
                 <div className={style.repos}>
                   <a href="https://github.com/Auri08V/PC-Universe-Back.git">
                     <p> Repo Back</p>
@@ -122,10 +150,25 @@ function App() {
             </div>
             <div className={style.slidecontainer}>
               <div className={style.imgContainer}>
-                <a href="https://wallpapercave.com/wp/wp1882781.jpg">
-                  <h2>Countries</h2>
-                </a>
-                <img src="https://wallpapercave.com/wp/wp1882781.jpg" />
+                <h2>Countries</h2>
+                <Carousel
+                  className={style.imgslide}
+                  showThumbs={false}
+                  interval={3000}
+                  showArrows={false}
+                  infiniteLoop={true}
+                  autoPlay={true}
+                >
+                  <div>
+                    <img src={countries1} />
+                  </div>
+                  <div>
+                    <img src={countries2} />
+                  </div>
+                  <div>
+                    <img src={countries3} />
+                  </div>
+                </Carousel>
                 <a href="https://github.com/pablo-prz/proyecto_individual_countries.git">
                   <p>Repositorio</p>
                 </a>
