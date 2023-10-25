@@ -20,7 +20,7 @@ import htmlCssLogo from "./imgs/html-css-logo.png";
 import reduxLogo from "./imgs/redux-logo.png";
 import seqLogo from "./imgs/sequelize-logo.png";
 import instaLogo from "./imgs/instagram-logo.png";
-import linkedinLogo from "./imgs/linkedin-logo.png";
+import linkedinLogo from "./imgs/Linkedin-logo.png";
 import whatsappLogo from "./imgs/whatsapp-logo.png";
 import gmailLogo from "./imgs/gmail-logo.png";
 import cvlogo from "./imgs/cv.png";
