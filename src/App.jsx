@@ -1,12 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
-
 import style from "./App.module.css";
 import Home from "./componentes/Sections/home/Home";
 import About from "./componentes/Sections/about/About";
 import Technologies from "./componentes/Sections/technologies/Technologies";
 import Projects from "./componentes/Sections/projects/Projects";
-import Nav from "./componentes/navBar/Nav.jsx";
 import Contacts from "./componentes/Sections/Contacts/Contacts";
+import Nav from "./componentes/navBar/Nav";
 
 function App() {
   return (
