@@ -4,7 +4,7 @@ import Home from "./componentes/Sections/home/Home";
 import About from "./componentes/Sections/about/About";
 import Technologies from "./componentes/Sections/technologies/Technologies";
 import Projects from "./componentes/Sections/projects/Projects";
-import Contacts from "./componentes/Sections/Contacts/Contacts";
+import Contacts from "./componentes/Sections/contacts/Contacts";
 import Nav from "./componentes/navBar/Nav";
 
 function App() {
