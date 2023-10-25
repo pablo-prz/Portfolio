@@ -1,11 +1,11 @@
 .aboutcontainer {
   height: 80%;
-  width: 90%;
+  width: 80%;
   border-radius: 50px;
   padding: 2%;
   font-size: larger;
   position: absolute;
-  left: 3%;
+  left: 7.5vw;
   top: 110%;
   backdrop-filter: blur(5px);
   background-color: #d8dee2;
