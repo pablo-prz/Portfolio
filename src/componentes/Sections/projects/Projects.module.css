@@ -8,6 +8,9 @@
   justify-content: space-around;
   height: 100%;
   overflow: hidden;
+  box-shadow: 10px 10px 10px #ecf2f7a2, -10px -10px 10px #ecf2f7a2,
+    inset 5px 5px 10px rgba(73, 73, 73, 0.5),
+    inset -5px -5px 10px rgba(73, 73, 73, 0.5);
 }
 
 .imgslide {
