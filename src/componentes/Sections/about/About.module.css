@@ -7,9 +7,9 @@
   position: absolute;
   left: 7.5vw;
   top: 110%;
+  color: #1c1c1c;
   backdrop-filter: blur(5px);
-  background-color: #d8dee2;
-
+  background-color: #d6dcdf;
   box-shadow: 10px 10px 10px #ecf2f7a2, -10px -10px 10px #ecf2f7a2,
     inset 5px 5px 10px rgba(73, 73, 73, 0.5),
     inset -5px -5px 10px rgba(73, 73, 73, 0.5);
