@@ -81,18 +81,26 @@
     display: flex;
   }
   .navContainer {
-    background-color: #d8dee270;
+    background-color: #d8dee260;
   }
   .bar {
-    display: none;
+    background-color: #d8dee260;
+    display: flex;
     flex-direction: column;
     margin-left: 0.5rem;
     margin-top: 5rem;
+    height: 50vh;
+    transition: all 0.5s ease;
+    height: 0vh;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
   }
 
   .isactive {
-    display: flex;
-    height: 40vh;
-    width: 30%;
+    left: 0;
+    width: 20vh;
+    height: 50vh;
+    opacity: 1;
   }
 }
