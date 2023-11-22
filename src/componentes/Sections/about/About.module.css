@@ -1,12 +1,12 @@
 .aboutcontainer {
-  height: 80%;
+  height: 70%;
   width: 80%;
   border-radius: 50px;
   padding: 2%;
   font-size: larger;
   position: absolute;
   left: 7.5vw;
-  top: 110%;
+  top: 100%;
   color: #1c1c1c;
   backdrop-filter: blur(5px);
   background-color: #d6dcdf;
@@ -14,16 +14,34 @@
     inset 5px 5px 10px rgba(73, 73, 73, 0.5),
     inset -5px -5px 10px rgba(73, 73, 73, 0.5);
 }
+.aptContain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .apsimgscontainer {
   display: flex;
   justify-content: space-evenly;
 }
 .apsimgs {
   padding: 2%;
-  max-width: 275px;
+  max-width: 60%;
 }
-.h3imgs {
-  display: flex;
-  justify-content: space-around;
-  color: #1c1c1c;
+@media screen and (max-width: 768px) {
+  .aboutcontainer {
+    top: 100%;
+    height: 48rem;
+  }
+  .aboutcontainer h1 {
+    font-size: x-large;
+    text-decoration: underline #d6852d;
+  }
+  .apsimgscontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .apsimgs {
+    width: 5em;
+    height: 5rem;
+  }
 }

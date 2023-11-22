@@ -13,16 +13,25 @@ const About = () => {
       <h3>{translatedTexts.aboutcontainer}</h3>
       <h1>{translatedTexts.aboutcontainer2}</h1>
       <div className={style.apsimgscontainer}>
-        <img className={style.apsimgs} src={csspik} />
-        <img className={style.apsimgs} src={frontendpik} />
-        <img className={style.apsimgs} src={backendpik} />
-        <img className={style.apsimgs} src={DBpik} />
-      </div>
-      <div className={style.h3imgs}>
-        <h3>{translatedTexts.design}</h3>
-        <h3>{translatedTexts.frontEnd}</h3>
-        <h3>{translatedTexts.backEnd}</h3>
-        <h3>{translatedTexts.databases}</h3>
+        <div className={style.aptContain}>
+          <img className={style.apsimgs} src={csspik} />
+          <h3>{translatedTexts.design}</h3>
+        </div>
+
+        <div className={style.aptContain}>
+          <img className={style.apsimgs} src={frontendpik} />
+          <h3>{translatedTexts.frontEnd}</h3>
+        </div>
+
+        <div className={style.aptContain}>
+          <img className={style.apsimgs} src={backendpik} />
+          <h3>{translatedTexts.backEnd}</h3>
+        </div>
+
+        <div className={style.aptContain}>
+          <img className={style.apsimgs} src={DBpik} />
+          <h3>{translatedTexts.databases}</h3>
+        </div>
       </div>
     </div>
   );

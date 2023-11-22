@@ -49,6 +49,26 @@
 }
 
 .textContainer h3 {
-  font-size: 25px;
+  font-size: x-large;
   color: #1c1c1c;
+}
+@media screen and (max-width: 768px) {
+  .slidecontainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .imgslide img {
+    max-width: 50%;
+  }
+  .imgContainer {
+    height: min-content;
+  }
+  .textContainer {
+    order: 1;
+  }
+  .textContainer h3 {
+    font-size: large;
+  }
 }

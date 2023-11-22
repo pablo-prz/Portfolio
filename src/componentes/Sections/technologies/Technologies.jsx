@@ -17,16 +17,14 @@ const Technologies = () => {
   const translatedTexts = translations[language];
 
   return (
-    <div>
+    <div className={style.container}>
       <h1>{translatedTexts.technologies}</h1>
-      <div className={style.Technologiescontainer}>
+      <div className={style.technologiesContainer}>
         <img src={reactLogo} />
         <img src={nodeLogo} />
         <img src={psgLogo} />
         <img src={jsLogo} />
         <img src={gitLogo} />
-      </div>
-      <div className={style.Technologies2container}>
         <img src={reduxLogo} />
         <img src={expressLogo} />
         <img src={seqLogo} />

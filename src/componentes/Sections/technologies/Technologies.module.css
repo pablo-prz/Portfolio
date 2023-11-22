@@ -1,35 +1,36 @@
+.container {
+  padding-top: 10%;
+}
+.technologiesContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-left: 10%;
+  max-width: 100%;
+  row-gap: 15%;
+}
+.technologiesContainer img {
+  background-color: #d8dee2;
+  border-radius: 15%;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4), 4px -4px 4px #ecf2f7a2;
+  width: 60%;
+  height: 80%;
+  transition: box-shadow 0.3s ease;
+}
+.technologiesContainer img:hover {
+  box-shadow: 3px 3px 3px #d6852d, 3px 3px 3px #f6fbffa2;
+}
 
-.Technologiescontainer {
-    display: flex;
-    justify-content: space-evenly;
-    max-width: 100%;
-    margin: 0 auto;
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 20%;
   }
-  .Technologiescontainer img {
-    background-color: #d8dee2;
-    padding: 1%;
-    border-radius: 15%;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4), 4px -4px 4px #ecf2f7a2;
-    max-width: 200px;
-    transition: box-shadow 0.3s ease; /* Agregamos una transición suave a la propiedad box-shadow */
+  .technologiesContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1%;
+    margin-left: 15%;
   }
-  
-  .Technologiescontainer img:hover {
-    box-shadow: 3px 3px 3px #d6852d, 3px 3px 3px #f6fbffa2;
+  .technologiesContainer img {
+    width: 40%;
   }
-  .Technologies2container {
-    margin-top: 10%;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .Technologies2container img {
-    background-color: #d8dee2;
-    padding: 1%;
-    border-radius: 15%;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4), 4px -4px 4px #ecf2f7a2;
-    transition: box-shadow 0.3s ease;
-    max-width: 100px;
-  }
-  .Technologies2container img:hover {
-    box-shadow: 3px 3px 3px #d6852d, 3px 3px 3px #f6fbffa2;
-  }
+}

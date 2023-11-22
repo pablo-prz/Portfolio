@@ -11,7 +11,7 @@ const translations = {
     introduction2:
       "Apasionado por el desarrollo web, mi compromiso es crecer constantemente y abrazar nuevos desafíos. Siempre buscando aprender y evolucionar en este emocionante campo.",
     aboutcontainer:
-      "Graduado como tecnico electromecaniuco en la E.E.S.T N°2. Tambien eh completado un intenso bootcamp de programacion con el cual he aprendido a desarrollar aplicaciones web utilizando varias de las tecnologias mas modernas y demandadas en la industria.",
+      "Graduado como tecnico electromecanico en la E.E.S.T N°2. Tambien eh completado un intenso bootcamp de programacion con el cual he aprendido a desarrollar aplicaciones web utilizando varias de las tecnologias mas modernas y demandadas en la industria.",
     aboutcontainer2: "¿En qué puedo ayudarte?",
     design: "Diseño",
     frontEnd: "Front-End",
